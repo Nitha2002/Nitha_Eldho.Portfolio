@@ -3,122 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        #about, #projects, #skills, #contact {
-            padding: 20px;
-            margin: 20px 0;
-            background: #fff;
-            border-radius: 5px;
-        }
-        h2 {
-            color: #333;
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        .project img {
-            width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Nitha Eldho</h1>
+        <p>Python Developer | Data Analyst | Programmer</p>
+    </header>
 
-<header>
-    <h1>My Portfolio</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <div class="container">
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Nitha Eldho,a B.Tech Computer Science graduate with a solid academic background in programming and technology. My studies have given me a comprehensive understanding of key concepts such as algorithms and data structures. As a recent graduate, I am eager to apply my theoretical knowledge in a practical setting and am enthusiastic about learning and growing within the tech industry. With a keen interest in solving real-world problems through innovative technology, I am ready to contribute my skills and passion to a dynamic team. I love coding and continuously improving my skills to keep up with the latest industry trends.</p>
+        </section>
 
-<div class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I am [Your Name], a passionate full-stack developer with experience in Python, HTML, CSS, and JavaScript. I love creating web applications and exploring new technologies.</p>
-    </section>
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div>
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <p>Project 1 - Description of the project</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <p>Project 2 - Description of the project</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <img src="project1.png" alt="Project 1">
-            <p>Description of project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <img src="project2.png" alt="Project 2">
-            <p>Description of project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: youremail@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">yourprofile</a></p>
-        <!-- Add more contact methods as needed -->
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 Your Name | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
