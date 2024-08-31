@@ -3,50 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nitha Eldho | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Nitha Eldho</h1>
-        <p>Python Developer | Data Analyst | Programmer</p>
-    </header>
+      <!-- Header -->
+      <nav class="navbar">
+        <div class="max-width">
+          <ul class="menu">
+            <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
+            <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
+            <li><a href="#skills" class="menu-btn"><strong>Skills</strong></a></li>
+            <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
+          </ul>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="max-width">
+          <div class="home-content">
+            <div class="text-1">HELLO...</div>
+            <div class="text-2">Welcome To My Portfolio</div>
+          </div>
+        </div>
+      </section>
 
-    <div class="container">
-        <!-- About Section -->
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Hello! I am Nitha Eldho,a B.Tech Computer Science graduate with a solid academic background in programming and technology. My studies have given me a comprehensive understanding of key concepts such as algorithms and data structures. As a recent graduate, I am eager to apply my theoretical knowledge in a practical setting and am enthusiastic about learning and growing within the tech industry. With a keen interest in solving real-world problems through innovative technology, I am ready to contribute my skills and passion to a dynamic team. I love coding and continuously improving my skills to keep up with the latest industry trends.</p>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2>My Projects</h2>
-            <div>
-                <img src="https://via.placeholder.com/300" alt="Project 1">
-                <p>Project 1 - Description of the project</p>
+      <!--  About  -->
+      <section class="about" id="about">
+        <div class="max-width">
+          <h2 class="title">About Me</h2>
+          <div class="about-content">
+            <div class="column left">
+              <img src="C:\Users\nitha\Downloads\img.jpg" alt="Profile Image 626x626" >
             </div>
-            <div>
-                <img src="https://via.placeholder.com/300" alt="Project 2">
-                <p>Project 2 - Description of the project</p>
+            <div class="column right">
+              <div class="text">Hi, I'm Nitha Eldho. <span class="typing-2"></span></div>
+              <p class="spaced-paragraph">I am a B.Tech graduate in Computer Science with extensive experience in programming languages including C, Java, and Python. I am eager to leverage my deep understanding of algorithms and data structures in a challenging entry-level role. With a strong ability to quickly learn new technologies and contribute effectively to team projects, I am passionate about using technology to solve real-world problems and drive innovation.</p>
+              <br>
+              <a href="https://drive.google.com/file/d/1cWVLO4_5bfRbZXVOdLxKaatBzBtZSvdc/view?usp=sharing" target="blank">Download CV</a>
             </div>
-            <!-- Add more projects as needed -->
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Contact Section -->
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
+      <!-- Skills -->
+      <section class="skills" id="skills">
+        <div class="max-width">
+          <h2 class="title">My Skills</h2>
+          <div class="skills-content">
+            <div class="column left">
+
+              <div class="text">INTERNSHIP</div>
+              <h3>Infocylanz,Kakkanad,Kerala</h3>
+              <p>
+                <li class="intern"> Acquired foundational skills in HTML, CSS, JavaScript.</li>
+                <li class="intern"> Used Bootstrap for responsive, appealing web designs.</li>
+                <li class="intern"> Gained hands-on experience with Python programming. </li>
+              </p>
+
+              <br>
+              <div class="text">PROJECT</div>
+
+              <p>
+                <li class="project">Portfolio (HTML, CSS, js, Bootstraps)</li>
+                <li class="project">IoT Based Smart Waste Management System</li>
+                <li class="project">Smart Waste Management System Using AIoT</li>
+              </p>
+
+            </div>
+            <div class="skills-section">
+              <h2>SKILLS</h2>
+              <ul class="skills-list">
+                  <li><strong>Languages:</strong> C, HTML, CSS, Python, Java, XML</li>
+                  <li><strong>Database:</strong> SQL and NoSQL</li>
+                  <li><strong>Tools:</strong> Visual Studio Code, Android Studio, Power BI</li>
+                  <li><strong>Soft Skills:</strong> Self Learning, Adaptability, Presentation, Record Keeping</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="max-width">
+          <h2 class="title">Contact Me</h2>
+          <div class="contact-content">
+            <div class="column left">
+                <div class="icons">
+                  <div class="contact-info">
+                    <p><strong>NITHA ELDHO</strong></p>
+                    <p><strong>Location:</strong><strong> Perumbavoor, Kerala, Ernakulam</strong></p>
+                    <p><strong>Email:</strong> <a href="mailto:your.email@example.com">nithaeldho7@gmail.com</a></p>
+                    <p><strong>Linkdin:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/nitha-eldho-2765b6258 </a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">https://github.com/NithaEldho</a></p>
+                </div>
+                  
+
+      <!-- Reach -->
+      <div class="column right">
+          <div class="text">Message Me</div>
+            <form action="#">
+              <div class="fields">
+                <div class="field name">
+                  <input type="text" placeholder="Your Name" required>
+                </div>
+              <div class="field email">
                 <input type="email" placeholder="Your Email" required>
-                <textarea rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Subject" required>
+              </div>
+              <div class="field textarea">
+                <textarea cols="30" rows="10" placeholder="Message..." required></textarea>
+              </div>
+              <div class="button-area">
                 <button type="submit">Send Message</button>
+              </div>
             </form>
-        </section>
-    </div>
+          </div>
+        </div>
+      </div>
+      </section>
 
-    <footer>
-        <p>&copy; 2024 Your Name | All Rights Reserved</p>
-    </footer>
-</body>
+      <!-- Footer -->
+      <footer>
+        <span>
+          <a href="#"> Nitha Eldho</a> | <span class="far fa-copyright"></span> 2024 All Rights Reserved. Privacy Policy
+        </span>
+      </footer>
+  </body>
 </html>
