@@ -296,7 +296,7 @@ p { color: var(--muted); margin-bottom: 1rem; }
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
 }
-.hero-name em { color: var(--accent); font-style: italic; }
+.hero-name em { color: var(--text); font-style: italic; }
 .hero-role {
   font-family: var(--ff-mono);
   font-size: 0.82rem; letter-spacing: 0.12em;
