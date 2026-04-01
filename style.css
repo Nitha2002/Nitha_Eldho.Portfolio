@@ -266,6 +266,7 @@ p { color: var(--muted); margin-bottom: 1rem; }
 .hero-inner {
   max-width: 1080px; margin: 0 auto; width: 100%;
   padding-top: 7rem; position: relative; z-index: 1;
+  text-align: center;
 }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
@@ -302,14 +303,14 @@ p { color: var(--muted); margin-bottom: 1rem; }
 }
 .hero-desc {
   font-size: 1.05rem; max-width: 520px; line-height: 1.85;
-  color: var(--muted); margin-bottom: 2.5rem;
+  color: var(--muted); margin: 0 auto 2.5rem;
 }
 mark {
   background: rgba(168,255,120,0.15);
   color: var(--accent);
   padding: 0.05em 0.3em; border-radius: 4px;
 }
-.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 5rem; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 5rem; justify-content: center; }
 
 /* HERO STATS */
 .hero-stats {
