@@ -1,141 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nitha Eldho | Data Professional</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-      <!-- Header -->
-      <nav class="navbar">
-        <div class="max-width">
-          <ul class="menu">
-            <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
-            <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
-            <li><a href="#skills" class="menu-btn"><strong>Skills</strong></a></li>
-            <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
-          </ul>
-          <div class="menu-btn">
-            <i class="fas fa-bars"></i>
+
+  <div class="grain"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">NE<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">DATA</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Data Professional &nbsp;·&nbsp; AI/ML &nbsp;·&nbsp; ETL</p>
+      <h1 class="hero-name reveal">Nitha<br/><em>Eldho</em></h1>
+      <p class="hero-sub reveal">Building intelligent data systems that process <span class="highlight">6 GB/min</span> — from ocean acoustics to scalable ML pipelines.</p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num">1+</span>
+        <span class="stat-label">Years Exp.</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">500GB</span>
+        <span class="stat-label">Data Processed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">0.35s</span>
+        <span class="stat-label">Query Response</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Turning raw data<br/><em>into real insight.</em></h2>
+          <p>I'm a data professional with 1+ year of experience building AI/ML-driven data systems at <strong>NPOL, DRDO</strong> — India's premier defence research organisation. My work spans ETL pipelines, PostgreSQL optimisation, and PyQt5 desktop GUI applications.</p>
+          <p>I thrive at the intersection of engineering precision and data storytelling, designing systems that are not just fast, but meaningfully useful.</p>
+          <div class="about-info">
+            <div><i class="fas fa-map-marker-alt"></i> Ernakulam, Kerala, India</div>
+            <div><i class="fas fa-envelope"></i> nithaeldho.cs@gmail.com</div>
+            <div><i class="fas fa-phone"></i> +91 9778237249</div>
+          </div>
+          <div class="about-links">
+            <a href="https://linkedin.com/in/nitha-eldho-2765b6258" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Nitha2002" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           </div>
         </div>
-      </nav>
-      
-      <!-- Home -->
-      <section class="home" id="home">
-        <div class="max-width">
-          <div class="home-content">
-            <div class="text-1">HELLO...</div>
-            <div class="text-2">Welcome To My Portfolio</div>
+        <div class="about-visual reveal">
+          <div class="avatar-card">
+            <div class="avatar-initials">NE</div>
+            <div class="avatar-tag">B.Tech CSE &nbsp;·&nbsp; CGPA 8.42</div>
+            <div class="avatar-org">NPOL · DRDO</div>
           </div>
-        </div>
-      </section>
-
-      <!--  About  -->
-      <section class="about" id="about">
-        <div class="max-width">
-          <h2 class="title">About Me</h2>
-          <div class="about-content">
-            <div class="column left">
-              <img src="https://github.com/Nitha2002/Nitha_Eldho.Portfolio/blob/main/img.jpg" alt="Profile Image 626x626" >
-            </div>
-            <div class="column right">
-              <div class="text">Hi, I'm Nitha Eldho. <span class="typing-2"></span></div>
-              <p class="spaced-paragraph">I am a B.Tech graduate in Computer Science with extensive experience in programming languages including C, Java, and Python. I am eager to leverage my deep understanding of algorithms and data structures in a challenging entry-level role. With a strong ability to quickly learn new technologies and contribute effectively to team projects, I am passionate about using technology to solve real-world problems and drive innovation.</p>
-              <br>
-              <a href="https://drive.google.com/file/d/1cWVLO4_5bfRbZXVOdLxKaatBzBtZSvdc/view?usp=sharing" target="blank">Download CV</a>
-            </div>
+          <div class="cert-badge">
+            <i class="fas fa-certificate"></i>
+            <span>Microsoft Power BI<br/>Data Analyst</span>
           </div>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section class="skills" id="skills">
-        <div class="max-width">
-          <h2 class="title">My Skills</h2>
-          <div class="skills-content">
-            <div class="column left">
-
-              <div class="text">INTERNSHIP</div>
-              <h3>Infocylanz,Kakkanad,Kerala</h3>
-              <p>
-                <li class="intern"> Acquired foundational skills in HTML, CSS, JavaScript.</li>
-                <li class="intern"> Used Bootstrap for responsive, appealing web designs.</li>
-                <li class="intern"> Gained hands-on experience with Python programming. </li>
-              </p>
-
-              <br>
-              <div class="text">PROJECT</div>
-
-              <p>
-                <li class="project">Portfolio (HTML, CSS, js, Bootstraps)</li>
-                <li class="project">IoT Based Smart Waste Management System</li>
-                <li class="project">Smart Waste Management System Using AIoT</li>
-              </p>
-
-            </div>
-            <div class="skills-section">
-              <h2>SKILLS</h2>
-              <ul class="skills-list">
-                  <li><strong>Languages:</strong> C, HTML, CSS, Python, Java, XML</li>
-                  <li><strong>Database:</strong> SQL and NoSQL</li>
-                  <li><strong>Tools:</strong> Visual Studio Code, Android Studio, Power BI</li>
-                  <li><strong>Soft Skills:</strong> Self Learning, Adaptability, Presentation, Record Keeping</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section class="contact" id="contact">
-        <div class="max-width">
-          <h2 class="title">Contact Me</h2>
-          <div class="contact-content">
-            <div class="column left">
-                <div class="icons">
-                  <div class="contact-info">
-                    <p><strong>NITHA ELDHO</strong></p>
-                    <p><strong>Location:</strong><strong> Perumbavoor, Kerala, Ernakulam</strong></p>
-                    <p><strong>Email:</strong> <a href="mailto:your.email@example.com">nithaeldho7@gmail.com</a></p>
-                    <p><strong>Linkdin:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/nitha-eldho-2765b6258 </a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">https://github.com/NithaEldho</a></p>
-                </div>
-                  
-
-      <!-- Reach -->
-      <div class="column right">
-          <div class="text">Message Me</div>
-            <form action="#">
-              <div class="fields">
-                <div class="field name">
-                  <input type="text" placeholder="Your Name" required>
-                </div>
-              <div class="field email">
-                <input type="email" placeholder="Your Email" required>
-              </div>
-              </div>
-              <div class="field">
-                <input type="text" placeholder="Subject" required>
-              </div>
-              <div class="field textarea">
-                <textarea cols="30" rows="10" placeholder="Message..." required></textarea>
-              </div>
-              <div class="button-area">
-                <button type="submit">Send Message</button>
-              </div>
-            </form>
+          <div class="cert-badge cert-badge-2">
+            <i class="fas fa-award"></i>
+            <span>Computer Graphics<br/>NPTEL</span>
           </div>
         </div>
       </div>
-      </section>
+    </div>
+  </section>
 
-      <!-- Footer -->
-      <footer>
-        <span>
-          <a href="#"> Nitha Eldho</a> | <span class="far fa-copyright"></span> 2024 All Rights Reserved. Privacy Policy
-        </span>
-      </footer>
-  </body>
+  <!-- EXPERIENCE -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label">02 — Experience</div>
+      <h2 class="section-title reveal">Where I've<br/><em>worked.</em></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jan 2025 – Jan 2026</span>
+              <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Ernakulam, India</span>
+            </div>
+            <h3 class="timeline-role">Apprentice</h3>
+            <div class="timeline-org">Naval Physical &amp; Oceanographic Laboratory (NPOL), DRDO</div>
+            <ul class="timeline-bullets">
+              <li>Contributed to <strong>ATHARVA</strong> — a framework for ocean acoustic data management achieving data parsing speeds of <strong>6 GB/min</strong> and metadata query response times of <strong>0.35 sec</strong> over 500+ GB of sonar GDR data.</li>
+              <li>Optimised PostgreSQL database architecture with <strong>inverted indexing</strong>, maintaining only 1 GB database overhead across 500 GB of GDR files.</li>
+              <li>Built PyQt5 desktop applications for sonar data retrieval and visualisation — metadata retrieval in <strong>0.18 sec</strong>, acoustic data in <strong>0.81 sec</strong>, visualisation in <strong>8 sec</strong>.</li>
+              <li>Developed binary file ETL pipelines to automatically parse sonar GDR packets, extract metadata, and load timestamped records into indexed PostgreSQL tables.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title reveal">Things I've<br/><em>built.</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-index="01">
+          <div class="project-tag">Acoustic Data · Python · PostgreSQL</div>
+          <h3 class="project-title">ATHARVA</h3>
+          <p class="project-full">Acoustic Data Archival &amp; Visualisation Framework</p>
+          <p class="project-desc">A scalable Python + PostgreSQL archival system capable of parsing sonar data at 6 GB/min with a minimal 1 GB database overhead over 500 GB of GDR files.</p>
+          <ul class="project-points">
+            <li>Content-based inverted indexing enabling targeted metadata searches in <strong>0.35 sec</strong></li>
+            <li>PyQt5 GUI with query widget, metadata plots, heatmaps, time-series overlays, power spectral density</li>
+            <li>Map-based data dashboard for region-wise data distribution</li>
+          </ul>
+          <div class="project-stack">
+            <span>Python</span><span>PostgreSQL</span><span>PyQt5</span><span>ETL</span><span>MATLAB</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-index="02">
+          <div class="project-tag">ML · IoT · Computer Vision</div>
+          <h3 class="project-title">AIoT Waste Classifier</h3>
+          <p class="project-full">AIoT-Based Plastic Waste Classification System</p>
+          <p class="project-desc">Trained a machine learning model achieving ~90% accuracy in identifying recyclable vs. non-recyclable plastic waste from image and sensor inputs.</p>
+          <ul class="project-points">
+            <li>Deployed on IoT monitoring system enabling <strong>automated waste segregation</strong></li>
+            <li>Real-time decision-making from image and sensor inputs</li>
+            <li>~90% classification accuracy on plastic waste categories</li>
+          </ul>
+          <div class="project-stack">
+            <span>Machine Learning</span><span>IoT</span><span>Python</span><span>Computer Vision</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">04 — Skills</div>
+      <h2 class="section-title reveal">What I<br/><em>know.</em></h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-icon"><i class="fas fa-code"></i></div>
+          <h4>Programming</h4>
+          <div class="skill-tags"><span>Python</span><span>SQL</span><span>C</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-icon"><i class="fas fa-database"></i></div>
+          <h4>Databases</h4>
+          <div class="skill-tags"><span>PostgreSQL</span><span>MySQL</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-icon"><i class="fas fa-cogs"></i></div>
+          <h4>Data Skills</h4>
+          <div class="skill-tags"><span>ETL Pipelines</span><span>Data Cleaning</span><span>Feature Extraction</span><span>Inverted Indexing</span><span>Transformation</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-icon"><i class="fas fa-chart-bar"></i></div>
+          <h4>Visualisation</h4>
+          <div class="skill-tags"><span>Power BI</span><span>Matplotlib</span><span>Excel</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-icon"><i class="fas fa-tools"></i></div>
+          <h4>Tools</h4>
+          <div class="skill-tags"><span>PyQt5</span><span>VS Code</span><span>PgAdmin</span><span>MATLAB</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-icon"><i class="fas fa-brain"></i></div>
+          <h4>Soft Skills</h4>
+          <div class="skill-tags"><span>Analytical Thinking</span><span>Problem Solving</span><span>Research Collaboration</span><span>Documentation</span><span>Adaptability</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">05 — Contact</div>
+      <div class="contact-inner reveal">
+        <h2 class="section-title">Let's build<br/><em>something together.</em></h2>
+        <p class="contact-sub">Open to data engineering, ML, and analytics roles. Drop me a message!</p>
+        <div class="contact-links">
+          <a href="mailto:nithaeldho.cs@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>nithaeldho.cs@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/nitha-eldho-2765b6258" target="_blank" class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <span>linkedin.com/in/nitha-eldho-2765b6258</span>
+          </a>
+          <a href="https://github.com/Nitha2002" target="_blank" class="contact-item">
+            <i class="fab fa-github"></i>
+            <span>github.com/Nitha2002</span>
+          </a>
+          <a href="tel:+919778237249" class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 9778237249</span>
+          </a>
+        </div>
+        <a href="mailto:nithaeldho.cs@gmail.com" class="btn-primary btn-large">Say Hello &nbsp;<i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2025 Nitha Eldho. Designed &amp; Built with ♥</span>
+      <div class="footer-links">
+        <a href="https://github.com/Nitha2002" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/nitha-eldho-2765b6258" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:nithaeldho.cs@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
